@@ -1,77 +1,25 @@
-[debug] [2020-11-09T20:38:53.084Z] ----------------------------------------------------------------------
-[debug] [2020-11-09T20:38:53.088Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Lenovo\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js emulators:start
-[debug] [2020-11-09T20:38:53.089Z] CLI Version:   8.15.1
-[debug] [2020-11-09T20:38:53.089Z] Platform:      win32
-[debug] [2020-11-09T20:38:53.089Z] Node Version:  v10.14.1
-[debug] [2020-11-09T20:38:53.094Z] Time:          Mon Nov 09 2020 21:38:53 GMT+0100 (GMT+01:00)
-[debug] [2020-11-09T20:38:53.094Z] ----------------------------------------------------------------------
-[debug] [2020-11-09T20:38:53.094Z] 
-[debug] [2020-11-09T20:38:53.119Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
-[debug] [2020-11-09T20:38:53.120Z] > authorizing via signed-in user
-[info] i  emulators: Starting emulators: database, hosting {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: database, hosting"}}
-[debug] [2020-11-09T20:38:55.191Z] [hub] writing locator at C:\Users\Lenovo\AppData\Local\Temp\hub-librairy-6429e.json
-[debug] [2020-11-09T20:38:57.244Z] database rules config:  [{"instance":"librairy-6429e","rules":"C:\\Users\\Lenovo\\Documents\\Angular\\revision-angular\\librairy\\database.rules.json"}]
-[info] i  database: downloading firebase-database-emulator-v4.7.1.jar... {"metadata":{"emulator":{"name":"database"},"message":"downloading firebase-database-emulator-v4.7.1.jar..."}}
-[debug] [2020-11-09T20:39:06.015Z] Ignoring unsupported arg: projectId {"metadata":{"emulator":{"name":"database"},"message":"Ignoring unsupported arg: projectId"}}
-[debug] [2020-11-09T20:39:06.015Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"database"},"message":"Ignoring unsupported arg: auto_download"}}
-[debug] [2020-11-09T20:39:06.016Z] Ignoring unsupported arg: rules {"metadata":{"emulator":{"name":"database"},"message":"Ignoring unsupported arg: rules"}}
-[debug] [2020-11-09T20:39:06.016Z] Starting Database Emulator with command {"binary":"java","args":["-Duser.language=en","-jar","C:\\Users\\Lenovo\\.cache\\firebase\\emulators\\firebase-database-emulator-v4.7.1.jar","--host","localhost","--port",9000],"optionalArgs":["port","host","functions_emulator_port","functions_emulator_host"],"joinArgs":false} {"metadata":{"emulator":{"name":"database"},"message":"Starting Database Emulator with command {\"binary\":\"java\",\"args\":[\"-Duser.language=en\",\"-jar\",\"C:\\\\Users\\\\Lenovo\\\\.cache\\\\firebase\\\\emulators\\\\firebase-database-emulator-v4.7.1.jar\",\"--host\",\"localhost\",\"--port\",9000],\"optionalArgs\":[\"port\",\"host\",\"functions_emulator_port\",\"functions_emulator_host\"],\"joinArgs\":false}"}}
-[info] i  database: Database Emulator logging to database-debug.log {"metadata":{"emulator":{"name":"database"},"message":"Database Emulator logging to \u001b[1mdatabase-debug.log\u001b[22m"}}
-[debug] [2020-11-09T20:39:11.127Z] 21:39:11.121 [NamespaceSystem-akka.actor.default-dispatcher-4] INFO akka.event.slf4j.Slf4jLogger - Slf4jLogger started
- {"metadata":{"emulator":{"name":"database"},"message":"21:39:11.121 [NamespaceSystem-akka.actor.default-dispatcher-4] INFO akka.event.slf4j.Slf4jLogger - Slf4jLogger started\r\n"}}
-[debug] [2020-11-09T20:39:11.516Z] 21:39:11.517 [main] INFO com.firebase.server.forge.App$ - Listening at localhost:9000
- {"metadata":{"emulator":{"name":"database"},"message":"21:39:11.517 [main] INFO com.firebase.server.forge.App$ - Listening at localhost:9000\r\n"}}
-[debug] [2020-11-09T20:39:14.311Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/librairy-6429e/webApps/-/config  
- 
-[debug] [2020-11-09T20:39:15.046Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Mon, 09 Nov 2020 20:45:38 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-Q050=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
-[info] i  hosting: Serving hosting files from: public {"metadata":{"emulator":{"name":"hosting"},"message":"Serving hosting files from: \u001b[1mpublic\u001b[22m"}}
-[info] +  hosting: Local server: http://localhost:5000 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: \u001b[4m\u001b[1mhttp://localhost:5000\u001b[22m\u001b[24m"}}
-[info] i  ui: downloading ui-v1.2.2.zip... {"metadata":{"emulator":{"name":"ui"},"message":"downloading ui-v1.2.2.zip..."}}
-[debug] [2020-11-09T20:39:20.746Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: auto_download"}}
-[debug] [2020-11-09T20:39:20.747Z] Ignoring unsupported arg: port {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: port"}}
-[debug] [2020-11-09T20:39:20.747Z] Starting Emulator UI with command {"binary":"node","args":["C:\\Users\\Lenovo\\.cache\\firebase\\emulators\\ui-v1.2.2\\server.bundle.js"],"optionalArgs":[],"joinArgs":false} {"metadata":{"emulator":{"name":"ui"},"message":"Starting Emulator UI with command {\"binary\":\"node\",\"args\":[\"C:\\\\Users\\\\Lenovo\\\\.cache\\\\firebase\\\\emulators\\\\ui-v1.2.2\\\\server.bundle.js\"],\"optionalArgs\":[],\"joinArgs\":false}"}}
-[info] i  ui: Emulator UI logging to ui-debug.log {"metadata":{"emulator":{"name":"ui"},"message":"Emulator UI logging to \u001b[1mui-debug.log\u001b[22m"}}
-[debug] [2020-11-09T20:39:21.178Z] Web / API server started at http://localhost:4000
- {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at http://localhost:4000\n"}}
-[debug] [2020-11-09T20:39:21.291Z] >>> HTTP REQUEST PUT http://localhost:9000/.settings/rules.json?ns=librairy-6429e  
- {
-  /* Visit https://firebase.google.com/docs/database/security to learn more about security rules. */
-  "rules": {
-    ".read": false,
-    ".write": false
-  }
-}
-[debug] [2020-11-09T20:39:22.730Z] <<< HTTP RESPONSE 200 {"content-length":"15","content-type":"application/json; charset=utf-8","access-control-allow-origin":"*","cache-control":"no-cache","x-firebase-project-id":"librairy-6429e","x-firebase-project-number":"123456789","x-firebase-uuid":"13844ddb-36a4-43c2-800a-466b0f2cde17"}
+[debug] [2020-11-09T22:15:28.441Z] ----------------------------------------------------------------------
+[debug] [2020-11-09T22:15:28.446Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Lenovo\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2020-11-09T22:15:28.447Z] CLI Version:   8.15.1
+[debug] [2020-11-09T22:15:28.447Z] Platform:      win32
+[debug] [2020-11-09T22:15:28.447Z] Node Version:  v10.14.1
+[debug] [2020-11-09T22:15:28.452Z] Time:          Mon Nov 09 2020 23:15:28 GMT+0100 (GMT+01:00)
+[debug] [2020-11-09T22:15:28.452Z] ----------------------------------------------------------------------
+[debug] [2020-11-09T22:15:28.453Z] 
+[debug] [2020-11-09T22:15:28.477Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-11-09T22:15:28.478Z] > authorizing via signed-in user
 [info] 
-┌───────────────────────────────────────────────────────────────────────┐
-│ ✔  All emulators ready! View status and logs at http://localhost:4000 │
-└───────────────────────────────────────────────────────────────────────┘
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
 
-┌──────────┬────────────────┬────────────────────────────────┐
-│ Emulator │ Host:Port      │ View in Emulator UI            │
-├──────────┼────────────────┼────────────────────────────────┤
-│ Database │ localhost:9000 │ http://localhost:4000/database │
-├──────────┼────────────────┼────────────────────────────────┤
-│ Hosting  │ localhost:5000 │ n/a                            │
-└──────────┴────────────────┴────────────────────────────────┘
-  Other reserved ports: 4400, 4500
+You're about to initialize a Firebase project in this directory:
 
-Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
- 
-[info] i  hosting: 127.0.0.1 - - [09/Nov/2020:20:39:54 +0000] "GET / HTTP/1.1" 200 4526 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.111 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [09/Nov/2020:20:39:54 +0000] \"GET / HTTP/1.1\" 200 4526 \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.111 Safari/537.36\""}}
-[info] i  hosting: 127.0.0.1 - - [09/Nov/2020:20:39:54 +0000] "GET /__/firebase/8.0.1/firebase-app.js HTTP/1.1" 200 19969 "http://localhost:5000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.111 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [09/Nov/2020:20:39:54 +0000] \"GET /__/firebase/8.0.1/firebase-app.js HTTP/1.1\" 200 19969 \"http://localhost:5000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.111 Safari/537.36\""}}
-[info] i  hosting: 127.0.0.1 - - [09/Nov/2020:20:39:54 +0000] "GET /__/firebase/8.0.1/firebase-auth.js HTTP/1.1" 200 176033 "http://localhost:5000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.111 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [09/Nov/2020:20:39:54 +0000] \"GET /__/firebase/8.0.1/firebase-auth.js HTTP/1.1\" 200 176033 \"http://localhost:5000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.111 Safari/537.36\""}}
-[info] i  hosting: 127.0.0.1 - - [09/Nov/2020:20:39:54 +0000] "GET /__/firebase/8.0.1/firebase-database.js HTTP/1.1" 200 190490 "http://localhost:5000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.111 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [09/Nov/2020:20:39:54 +0000] \"GET /__/firebase/8.0.1/firebase-database.js HTTP/1.1\" 200 190490 \"http://localhost:5000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.111 Safari/537.36\""}}
-[info] i  hosting: 127.0.0.1 - - [09/Nov/2020:20:39:54 +0000] "GET /__/firebase/8.0.1/firebase-functions.js HTTP/1.1" 200 9993 "http://localhost:5000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.111 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [09/Nov/2020:20:39:54 +0000] \"GET /__/firebase/8.0.1/firebase-functions.js HTTP/1.1\" 200 9993 \"http://localhost:5000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.111 Safari/537.36\""}}
-[info] i  hosting: 127.0.0.1 - - [09/Nov/2020:20:39:54 +0000] "GET /__/firebase/8.0.1/firebase-messaging.js HTTP/1.1" 200 40767 "http://localhost:5000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.111 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [09/Nov/2020:20:39:54 +0000] \"GET /__/firebase/8.0.1/firebase-messaging.js HTTP/1.1\" 200 40767 \"http://localhost:5000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.111 Safari/537.36\""}}
-[info] i  hosting: 127.0.0.1 - - [09/Nov/2020:20:39:54 +0000] "GET /__/firebase/8.0.1/firebase-firestore.js HTTP/1.1" 200 279682 "http://localhost:5000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.111 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [09/Nov/2020:20:39:54 +0000] \"GET /__/firebase/8.0.1/firebase-firestore.js HTTP/1.1\" 200 279682 \"http://localhost:5000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.111 Safari/537.36\""}}
-[info] i  hosting: 127.0.0.1 - - [09/Nov/2020:20:39:54 +0000] "GET /__/firebase/8.0.1/firebase-analytics.js HTTP/1.1" 200 35654 "http://localhost:5000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.111 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [09/Nov/2020:20:39:54 +0000] \"GET /__/firebase/8.0.1/firebase-analytics.js HTTP/1.1\" 200 35654 \"http://localhost:5000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.111 Safari/537.36\""}}
-[info] i  hosting: 127.0.0.1 - - [09/Nov/2020:20:39:54 +0000] "GET /__/firebase/8.0.1/firebase-storage.js HTTP/1.1" 200 36030 "http://localhost:5000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.111 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [09/Nov/2020:20:39:54 +0000] \"GET /__/firebase/8.0.1/firebase-storage.js HTTP/1.1\" 200 36030 \"http://localhost:5000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.111 Safari/537.36\""}}
-[info] i  hosting: 127.0.0.1 - - [09/Nov/2020:20:39:54 +0000] "GET /__/firebase/8.0.1/firebase-remote-config.js HTTP/1.1" 200 36826 "http://localhost:5000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.111 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [09/Nov/2020:20:39:54 +0000] \"GET /__/firebase/8.0.1/firebase-remote-config.js HTTP/1.1\" 200 36826 \"http://localhost:5000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.111 Safari/537.36\""}}
-[info] i  hosting: 127.0.0.1 - - [09/Nov/2020:20:39:54 +0000] "GET /__/firebase/init.js?useEmulator=true HTTP/1.1" 200 - "http://localhost:5000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.111 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [09/Nov/2020:20:39:54 +0000] \"GET /__/firebase/init.js?useEmulator=true HTTP/1.1\" 200 - \"http://localhost:5000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.111 Safari/537.36\""}}
-[info] i  hosting: 127.0.0.1 - - [09/Nov/2020:20:39:54 +0000] "GET /__/firebase/8.0.1/firebase-performance.js HTTP/1.1" 200 38467 "http://localhost:5000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.111 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [09/Nov/2020:20:39:54 +0000] \"GET /__/firebase/8.0.1/firebase-performance.js HTTP/1.1\" 200 38467 \"http://localhost:5000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.111 Safari/537.36\""}}
-[info] i  hosting: 127.0.0.1 - - [09/Nov/2020:20:39:54 +0000] "GET /favicon.ico HTTP/1.1" 404 1808 "http://localhost:5000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.111 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [09/Nov/2020:20:39:54 +0000] \"GET /favicon.ico HTTP/1.1\" 404 1808 \"http://localhost:5000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.111 Safari/537.36\""}}
-[info] i  hosting: 127.0.0.1 - - [09/Nov/2020:20:42:48 +0000] "GET / HTTP/1.1" 200 4526 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.111 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [09/Nov/2020:20:42:48 +0000] \"GET / HTTP/1.1\" 200 4526 \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.111 Safari/537.36\""}}
-[info] i  hosting: 127.0.0.1 - - [09/Nov/2020:20:43:37 +0000] "GET /__/firebase/init.js?useEmulator=true HTTP/1.1" 200 - "http://localhost:5000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.111 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [09/Nov/2020:20:43:37 +0000] \"GET /__/firebase/init.js?useEmulator=true HTTP/1.1\" 200 - \"http://localhost:5000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.111 Safari/537.36\""}}
-[info] i  hosting: 127.0.0.1 - - [09/Nov/2020:20:49:01 +0000] "GET / HTTP/1.1" 200 4526 "http://localhost:4000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.111 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [09/Nov/2020:20:49:01 +0000] \"GET / HTTP/1.1\" 200 4526 \"http://localhost:4000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.111 Safari/537.36\""}}
-[info] i  hosting: 127.0.0.1 - - [09/Nov/2020:20:49:01 +0000] "GET /__/firebase/init.js?useEmulator=true HTTP/1.1" 200 - "http://localhost:5000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.111 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [09/Nov/2020:20:49:01 +0000] \"GET /__/firebase/init.js?useEmulator=true HTTP/1.1\" 200 - \"http://localhost:5000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.111 Safari/537.36\""}}
+  C:\Users\Lenovo\Documents\Angular\revision-angular\librairy
+
+Before we get started, keep in mind:
+
+  * You are initializing in an existing Firebase project directory
+

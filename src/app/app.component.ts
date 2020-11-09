@@ -12,18 +12,19 @@ export class AppComponent {
 
   constructor(){
 
-     var firebaseConfig = {
-      apiKey: "AIzaSyCvJ4mp_P_ckAk_wt9wNePkqdV2UUY2JL8",
-      authDomain: "book-store-c04cf.firebaseapp.com",
-      databaseURL: "https://book-store-c04cf.firebaseio.com",
-      projectId: "book-store-c04cf",
-      storageBucket: "book-store-c04cf.appspot.com",
-      messagingSenderId: "665668367909",
-      appId: "1:665668367909:web:b58ad7af605f4ae8c631cc",
-      measurementId: "G-9WYRH82Q79"
-  };
-  // Initialize Firebase
-  firebase.initializeApp(firebaseConfig);
+     var firebaseConfig =  {
+      apiKey: "AIzaSyCYpcayLnF0D4f6XYY2rptj9zOzmZRSWew",
+      authDomain: "librairy-6429e.firebaseapp.com",
+      databaseURL: "https://librairy-6429e.firebaseio.com",
+      projectId: "librairy-6429e",
+      storageBucket: "librairy-6429e.appspot.com",
+      messagingSenderId: "84925542391",
+      appId: "1:84925542391:web:46a94a2472ff5dc446c8f2",
+      measurementId: "G-GVJWK5R944"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    firebase.analytics();
   }
 
 
