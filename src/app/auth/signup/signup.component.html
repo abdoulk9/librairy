@@ -1,0 +1,32 @@
+<div container-fluide>
+  <div class="col-sm-8 offset-sm-2">
+    <h2>Create user</h2>
+    <form [formGroup]="signupForm" (ngSubmit)="onSubmit()">
+      <div class="form-group">
+        <label for="email"> E-mail:</label>
+        <input type="text" id="email" class="form-control" formControlName="email">
+      </div>
+      <div class="form-group">
+        <label for="password">Password:</label>
+        <input type="password" id="password" class="form-control" formControlName="password">
+      </div>
+      <button class="btn btn-primary" type="submit" [disabled]="signupForm.invalid" (click)="onSubmit()"> Signup
+        Now</button>
+        
+          <div>
+           <p class="text-center">Or</p>
+          </div>
+        
+      <div class="row">
+        <div class="col-sm-8">
+          <a class="btn btn-danger btn-google" href="#">
+            <img src="https://img.icons8.com/color/16/0000000/google-logo.png">
+            Signup Using Google
+          </a>
+        </div><br>
+        <p>Already have an compte ?<a href="../signin/signin.component.html">Login</a></p>
+      </div>
+    </form>
+    <p class="text-danger">{{ errorMessage }}</p>
+  </div>
+</div>

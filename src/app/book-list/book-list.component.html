@@ -1,0 +1,48 @@
+<div class="row">
+  <div class="col-sm-12">
+    <h2> Books list</h2>
+    <div class="list-group">
+      
+        <div  *ngIf="books.length ===1; else tableBlock">
+        <button class="list-group-item" *ngFor="let book of books; let i = index" (click)="viewBook(i)">
+          <h3 class="list-group-item-heading">
+            {{book.title }}
+            <button class="btn btn-danger float-right" (click)="deleteBook()">
+              <span class="glyphicon glyphicon-trash"></span>
+            </button>
+          </h3>
+          <p class="list-group-item-text">{{ book.author }}</p>
+        </button>
+      </div>
+
+      <ng-template #tableBlock>
+      <div class="list-group-item">
+        <table class="table table-bordered table-sm table-striped table-hover">
+          <thead class="thead-dark">
+            <tr class="align-center">
+              <th>Title</th>
+              <th>Author</th>
+              <th>View</th>
+              <th>Delete</th>
+            </tr>
+          </thead>
+          <tbody *ngFor="let book of books; let i = index">
+            <tr>
+              <td> {{book.title }}</td>
+              <td> {{book.author }}</td>
+              <td>
+                <button class="btn btn-default" (click)="viewBook(i)">Detail</button>
+              </td>
+              <td>
+                <button type="button" class="btn btn-default" (click)="deleteBook(book)">
+                  <span class="glyphicon glyphicon-envelope"></span>Delete
+                </button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      </ng-template>
+    <button class="btn btn-primary" (click)="newBook()">New book</button>
+  </div>
+</div>

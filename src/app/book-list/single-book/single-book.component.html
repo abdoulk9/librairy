@@ -1,0 +1,10 @@
+<div class="container bg-dark text-white" >
+  <h2>Book's detail</h2>
+  <div class="col-sm-12">
+    <img style="max-width: 100px;" *ngIf="book.image" [src]="book.image">
+    <h1>{{ book.title}}</h1>
+    <h3>{{ book.author }}</h3>
+    <p>{{ book.synopsis }}</p>
+  </div>
+  <button  class="btn btn-default text-white" type="button" (click)="return()">Retour</button>
+</div>
