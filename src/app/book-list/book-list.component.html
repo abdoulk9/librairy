@@ -2,13 +2,11 @@
   <div class="col-sm-12">
     <h2> Books list</h2>
     <div class="list-group">
-      
         <div  *ngIf="books.length ===1; else tableBlock">
         <button class="list-group-item" *ngFor="let book of books; let i = index" (click)="viewBook(i)">
           <h3 class="list-group-item-heading">
             {{book.title }}
-            <button class="btn btn-danger float-right" (click)="deleteBook()">
-              <span class="glyphicon glyphicon-trash"></span>
+            <button class="btn btn-danger float-right" (click)="deleteBook(book)">Delete
             </button>
           </h3>
           <p class="list-group-item-text">{{ book.author }}</p>
@@ -43,6 +41,6 @@
         </table>
       </div>
       </ng-template>
-    <button class="btn btn-primary" (click)="newBook()">New book</button>
+    <button class="btn btn-primary" (click)="newBook()"> Add a new book</button>
   </div>
 </div>

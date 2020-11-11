@@ -9,6 +9,7 @@ export class AuthService {
 
   provider = new firebase.auth.GoogleAuthProvider();
   
+  
 
   constructor() { }
 
@@ -40,14 +41,17 @@ export class AuthService {
       }
     );
   }
-
+  
+   
   signWithGoogle(){
-    firebase.auth().getRedirectResult()
+    this.provider.addScope('https://gooogleapis.com/auth/contacts.readonly');
+    firebase.auth().signInWithPopup(this.provider)
     .then(
       (result) =>{
-        const  token = result.credential;
-        const  user = result.user;
-        console.log(token);
+        if(result.credential){
+          const  token = (<any>result).credential.accessToken;
+          console.log(token);
+        }
       })
       .catch( (error) =>{
         console.log(error);
@@ -55,6 +59,10 @@ export class AuthService {
         const email = error.eamil;
         const credential = error.credential; */
       });
+      //firebase.auth().signInWithRedirect(this.provider);
+      
+      console.log(`vous êtes connecter: ${this.provider.addScope('email')}`);
+
   }
 
   signOut(){

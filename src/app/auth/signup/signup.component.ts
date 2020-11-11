@@ -46,7 +46,10 @@ export class SignupComponent implements OnInit {
   }
 
   submitWithGoogle(){
+    console.log('I clicked !');
     this.authService.signWithGoogle();
+    //this.router.navigate(['/books']);
+  
   }
 
 }
