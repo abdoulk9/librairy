@@ -8,26 +8,23 @@ import { BookListComponent } from './book-list/book-list.component';
 import { HeaderComponent } from './header/header.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
-import { AuthService } from './services/auth.service';
+import {  AuthService } from './services/auth.service';
 import { BooksService } from './services/books.service';
 import { AuthGuardService } from './services/auth-guard.service';
 import { Routes, RouterModule } from '@angular/router';
 import { SingleBookComponent } from './book-list/single-book/single-book.component';
 import { BookFormComponent } from './book-list/book-form/book-form.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
-import { GoogleLoginProvider, SocialLoginModule, SocialAuthServiceConfig, FacebookLoginProvider } from 'angularx-social-login';
+import { GoogleLoginProvider,
+          SocialLoginModule,
+          SocialAuthServiceConfig,
+          FacebookLoginProvider   } from 'angularx-social-login';
+import { LoginComponent } from './login/login.component';
+import { HomeComponent } from './home/home.component';
+import { ApproutingModule } from './approuting/approuting.module';
+import { CreateuserComponent } from './createuser/createuser.component';
 
 
-
-const appRoutes: Routes = [
-  { path: 'auth/signup', component: SignupComponent },
-  { path: 'auth/signin', component: SigninComponent },
-  { path: 'books', canActivate: [AuthGuardService], component: BookListComponent },
-  { path: 'books/new', canActivate: [AuthGuardService], component: BookFormComponent },
-  { path: 'books/view/:id', canActivate: [AuthGuardService], component: SingleBookComponent },
-  { path: '', redirectTo: 'books', pathMatch: 'full' },
-  { path: '**', redirectTo: 'books' }
-]
 
 
 
@@ -40,6 +37,9 @@ const appRoutes: Routes = [
     SingleBookComponent,
     BookFormComponent,
     HeaderComponent,
+    LoginComponent,
+    HomeComponent,
+    CreateuserComponent,
 
   ],
   imports: [
@@ -49,7 +49,7 @@ const appRoutes: Routes = [
     HttpClientModule,
     FontAwesomeModule,
     SocialLoginModule,
-    RouterModule.forRoot(appRoutes)
+    ApproutingModule
   ],
   providers: [
     AuthService,

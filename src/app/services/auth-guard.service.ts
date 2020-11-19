@@ -1,7 +1,5 @@
 import { Injectable } from '@angular/core';
-import { ɵangular_packages_platform_browser_dynamic_testing_testing_a } from '@angular/platform-browser-dynamic/testing';
 import { CanActivate, Router } from '@angular/router';
-import { promise } from 'protractor';
 import { Observable } from 'rxjs';
 import firebase from 'firebase';
 

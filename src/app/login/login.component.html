@@ -1,0 +1,31 @@
+<div class="container-fluide">
+    <h2> Login</h2>
+<div class="card-block">
+  <div class="card-log-block">
+    <div class="card-lock">
+      <img src="/assets/lock.png" class="display">
+    </div>
+    <div class="login-block">
+      <div class="block-fbook">
+        <p class="log-fbook" ><span class="fa fa-facebook"></span> Login With Facebook</p>
+      </div>
+      <div class="block-google">
+        <img src="https://img.icons8.com/color/16/0000000/google-logo.png"> 
+        <a class=" google-line log-google" (click)="loginWithGoogle()"> Login With Google</a>
+      </div>
+      <div class="block-email">
+        <a class="log-email" routerLink="/auth/signin">
+          <span class="email-line fa fa-envelope"> Login With Email</span>
+        </a>
+      </div>
+      <div class="block-infos">
+        <a class="infos-line" routerLink="/users">No account? <strong>Create it on here</strong></a>
+      </div>
+    </div>
+  </div>
+</div>
+<div>
+
+</div>
+  <button class="btn btn-success" (click)="reditectTo()"> << Home</button>
+</div>

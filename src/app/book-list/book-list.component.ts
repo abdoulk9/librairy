@@ -2,6 +2,7 @@ import { Component, OnDestroy, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { Subscription } from 'rxjs';
 import { Book } from '../models/book.model';
+import { AuthService } from '../services/auth.service';
 import { BooksService } from '../services/books.service';
 
 @Component({
@@ -15,7 +16,8 @@ export class BookListComponent implements OnInit, OnDestroy {
   booksSubcription: Subscription;
 
   constructor(private booksService: BooksService,
-    private router: Router) { }
+    private router: Router,
+      private authServie: AuthService) { }
 
   ngOnInit() {
     this.booksSubcription = this.booksService.bookSubject.subscribe(
@@ -37,6 +39,11 @@ export class BookListComponent implements OnInit, OnDestroy {
   viewBook(id: number) {
     this.router.navigate(['/books', 'view', id]);
   }
+   
+    lougOut(){
+      this.authServie.signOut();
+      this.router.navigate(['/home']);
+    }
 
   ngOnDestroy() {
     this.booksSubcription.unsubscribe();

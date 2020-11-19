@@ -1,4 +1,4 @@
-<div container-fluide>
+<div class="container-fluide">
   <div class="col-sm-8 offset-sm-2">
     <h2>Connection</h2>
     <form [formGroup]="signinForm" (ngSubmit)="onSubmit()">
@@ -10,7 +10,10 @@
         <label for="password">Mot de passe</label>
         <input type="password" id="password" class="form-control" formControlName="password">
       </div>
-      <button class="btn btn-primary" type="submit" [disabled]="signinForm.invalid" (click)="onSubmit()">To connect</button>
+      <div class="btn-groupe">
+        <button  type="button" class="btn btn-success" (click)="redirectTo()"> << Login</button>
+        <button  type="button" class="btn btn-primary" type="submit" [disabled]="signinForm.invalid" (click)="onSubmit()">Connect</button>
+      </div>
     </form>
     <p class="text-danger">{{ errorMessage }}</p>
   </div>

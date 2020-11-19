@@ -1,0 +1,16 @@
+
+
+
+.card-block{
+    width: 100%; 
+    height: 500px;
+}
+.card-body-content{
+    background-color: rgba(137, 43, 226, 0.884);
+    text-align: center;
+    padding: 6em;
+}
+
+.card-footer{
+  text-align: center;
+}
