@@ -1,9 +1,13 @@
+
+
 .card-block{
     position: relative;
     width: 100%;
     height: 500px;
-    background: url('/assets/book2.jpg') no-repeat 0 100%;
+   /* background: url('/assets/book2.jpg') no-repeat 0 100%;*/
+   background-color: blueviolet;
     background-size: cover;
+    
 }
 .card-log-block{
     position: relative;
@@ -12,7 +16,7 @@
     border: solid 2px rgba(255, 255, 255, 0.39);
     background: white;
     margin: auto;
-    padding-top: 30px ;
+    margin-top: 20px ;
 }
 .block-fbook{
     position: relative;

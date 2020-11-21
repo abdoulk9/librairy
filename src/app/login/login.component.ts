@@ -21,6 +21,7 @@ export class LoginComponent implements OnInit {
   }
  
    loginWithGoogle(){
+     console.log("Google login !!");
      this.socialAuthService.signIn(GoogleLoginProvider.PROVIDER_ID);
      this.router.navigate(['/books']);
    }
