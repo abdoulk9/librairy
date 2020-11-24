@@ -1,10 +1,28 @@
-<div class="container bg-dark text-white" >
-  <h2>Book's detail</h2>
-  <div class="col-sm-12">
+
+<div class="jumbotron text-center" style="margin-bottom: 0;">
+  <h2> Book's detail</h2>
+</div>
+<div class="container" style="margin-top: 30px;" >
+  <div class="row">
+  
+  <!--<div class="col-sm-12">
     <img style="max-width: 100px;" *ngIf="book.image" [src]="book.image">
     <h1>{{ book.title}}</h1>
     <h3>{{ book.author }}</h3>
     <p>{{ book.synopsis }}</p>
+  </div> -->
+  <div class="col-sm-4 justify-content-center">
+    <h5>cover</h5>
+    <img style="max-width: 100px;" *ngIf="book.image" [src]="book.image" class="img-thumbnail">
+    <hr class="d-sm-none">
   </div>
-  <button  class="button fancy-button text-bg" type="button" (click)="return()">Retour</button>
+  <div class="col-sm-8">
+    <h1>{{ book.title}}</h1>
+    <h3>{{ book.author }}</h3>
+    <p>{{ book.synopsis }}</p>
+  </div>
+</div>
+</div>
+<div>
+  <button  class="fancy-button text-bg" type="button" (click)="return()">Retour</button>
 </div>
