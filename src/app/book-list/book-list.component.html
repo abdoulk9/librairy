@@ -1,7 +1,7 @@
 <div class="row">
   <div class="col-sm-12">
     <h2> Books list</h2>
-    <div class="list-group">
+    <div class="list-group" >
         <div  *ngIf="books.length ===1; else tableBlock">
         <button class="list-group-item" *ngFor="let book of books; let i = index" (click)="viewBook(i)">
           <h3 class="list-group-item-heading">
@@ -13,9 +13,9 @@
         </button>
       </div>
 
-      <ng-template #tableBlock>
+      <ng-template #tableBlock >
       <div class="list-group-item">
-        <table class="table table-bordered table-sm table-striped table-hover">
+        <table class="table table-bordered table-sm table-striped table-hover" [@moveInLeft]="state">
           <thead class="thead-dark">
             <tr class="align-center">
               <th>Title</th>
@@ -29,7 +29,7 @@
               <td> {{book.title }}</td>
               <td> {{book.author }}</td>
               <td>
-                <button class="btn btn-default" (click)="viewBook(i)">Detail</button>
+                <button class="btn btn-default" (click)="viewBook(i)" [@moveInLeft]="state">Detail</button>
               </td>
               <td>
                 <button type="button" class="btn btn-default" (click)="deleteBook(book)">

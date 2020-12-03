@@ -1,19 +1,25 @@
-import { Component, OnDestroy, OnInit } from '@angular/core';
+import { Component, OnDestroy, OnInit, HostBinding } from '@angular/core';
 import { Router } from '@angular/router';
-import { Subscription } from 'rxjs';
+import { from, Subscription } from 'rxjs';
 import { Book } from '../models/book.model';
 import { AuthService } from '../services/auth.service';
 import { BooksService } from '../services/books.service';
+import { trigger, state, style, animate, transition } from '@angular/animations';
+import { fallIn, moveIn, moveInLeft } from 'animations/router.animations';
+
 
 @Component({
   selector: 'app-book-list',
   templateUrl: './book-list.component.html',
-  styleUrls: ['./book-list.component.css']
+  styleUrls: ['./book-list.component.css'],
+  animations: [moveIn, fallIn, moveInLeft],
+  host:{ '[@moveIn]' :''}
 })
 export class BookListComponent implements OnInit, OnDestroy {
 
   books: Book[];
   booksSubcription: Subscription;
+  state: string= '';
 
   constructor(private booksService: BooksService,
     private router: Router,

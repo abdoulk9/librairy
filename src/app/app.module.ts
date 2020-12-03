@@ -23,6 +23,7 @@ import { LoginComponent } from './login/login.component';
 import { HomeComponent } from './home/home.component';
 import { ApproutingModule } from './approuting/approuting.module';
 import { CreateuserComponent } from './createuser/createuser.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 
 
@@ -39,8 +40,7 @@ import { CreateuserComponent } from './createuser/createuser.component';
     HeaderComponent,
     LoginComponent,
     HomeComponent,
-    CreateuserComponent,
-
+    CreateuserComponent
   ],
   imports: [
     BrowserModule,
@@ -49,7 +49,8 @@ import { CreateuserComponent } from './createuser/createuser.component';
     HttpClientModule,
     FontAwesomeModule,
     SocialLoginModule,
-    ApproutingModule
+    ApproutingModule,
+    BrowserAnimationsModule
   ],
   providers: [
     AuthService,
